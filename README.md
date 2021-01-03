@@ -1,5 +1,25 @@
 # epic-games-store-scraper
-A basic scraper to get games names from différents catégories on the epic-games store, need to have downloaded chrome browser
+A scraper to get games names from differents categories on the epic-games store and log-in to buy free games, need to have downloaded chrome browser
+
+it can:
+
+
+-get main page categories and their content
+
+
+-get the X first free games sorted by release date
+
+
+-get the free game of the week name
+
+
+-verify if a game exist, and if it exist display his name and price including sales.
+
+
+-connect to your epic games account and by a free game by name
+
+
+
 
 ⋅⋅* Installation :
 
