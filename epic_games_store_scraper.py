@@ -78,7 +78,8 @@ class epic_games_store_scraper():
 
     def get_game_by_name(self,name):
         '''
-        return the game name and price if the game exist, else return \"This game is not in the epic-games store\"
+        return the game name, the developpement studio and price if the game exist, 
+        else return \"This game is not in the epic-games store\"
         '''
         self.driver.get("https://www.epicgames.com/store/fr/")
         sleep(5)
@@ -90,6 +91,8 @@ class epic_games_store_scraper():
             ele = self.driver.find_element_by_class_name("css-2ucwu")
             info.append(ele.text)
             ele = self.driver.find_element_by_class_name("css-r6gfjb-PurchasePrice__priceContainer")
+            info.append(ele.text)
+            ele =  self.driver.find_element_by_class_name("css-657o8l-StoreOfferTitleInfo__ellipsis")
             info.append(ele.text)
             return info
         except:
