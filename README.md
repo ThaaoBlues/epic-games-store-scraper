@@ -13,7 +13,7 @@ it can:
 -get the free game of the week name
 
 
--verify if a game exist, and if it exist display his name and price including sales.
+-verify if a game exist, and if it exist display his name, developpement studio and price including sales.
 
 
 -connect to your epic games account and by a free game by name
@@ -67,10 +67,11 @@ print("===================\nfree game of the week:\n===================")
 print(sc.get_free_game_of_the_week())
 
 
-#get a game by name and display his price, if the game doesn't exist the function return "This game is not in the epic-games store"
+#get a game by name, developpement studio and display his price, if the game doesn't exist the function return "This game is not in the epic-games store"
 ele = sc.get_game_by_name("among us")
 print("name : " + ele[0])
 print("price : "+ ele[1])
+print("made by : "+ele[2])
 
 
 #connect to your epic games account and by a free game by name
